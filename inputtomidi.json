@@ -1,0 +1,45 @@
+{
+    "keyboard": [
+	    {
+		    "type": "notepad",
+		    "map": [ "\\", "z", "x", "c", "v", "b", "n", "m", ",", ".", ";", "/", "a" ,"s", "d" ,"f" ,"g", "h", "j", "k", "l", "ç", "~", "]", "q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "´", "[" ],
+			"select-root": [ "down", "up" ],
+			"select-scale": [ "left", "right" ],
+			"params": {
+				"channel": 1,
+				"root-note": 36,
+				"velocity": 100,
+				"harmonize": "dorian"
+		    }
+		},
+	    {
+		    "type": "drumpad",
+			"map": [ "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" ],
+			"select-note": [ "-", "+" ],
+		    "params": {
+				"channel": 2,
+				"note": [ 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46 ],
+				"velocity": 100,
+				"note-off": false
+		    }
+		},
+	    {
+		    "type": "ccpad",
+			"map": [ "up", "down" ],
+			"select-cc": [ "left", "right" ],
+			"params": {
+				"channel": 0,
+				"cc": [ 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46 ],
+				"step": 5
+		    }
+		}
+    ],
+    "mouse": [
+	    {
+		    "type": "mouse",
+		    "y": [ 40, 43, 44, 45, 46, 47, 48, 49, 50 ],
+		    "x": [ 61, 62, 63, 64, 65, 66, 67, 68, 69 ],
+		    "channel": 1
+	    }    
+    ]
+}

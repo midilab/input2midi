@@ -1,0 +1,19 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+import json
+from input2midi import input2midi
+
+DATA_PATH = '/home/opendsp/data/'
+
+if __name__ == '__main__':
+    # load config map file
+    cfg_file = open(DATA_PATH + 'inputtomidi.json', 'r')
+    map_config = json.loads(cfg_file.read())
+
+    input_to_midi = input2midi.Core()
+
+    input_to_midi.init(map_config)
+
+    # daemonize us
+    input_to_midi.run()
